@@ -50,5 +50,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Installed create react app
 - Installed additional modules:
   - material-ui core and icons
-  - react query (easy server state management)
   - styled-components and types. (material-ui does not cut it)
