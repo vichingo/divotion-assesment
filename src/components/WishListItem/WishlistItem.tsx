@@ -27,15 +27,15 @@ const WishlistItem: React.FC<Props> = ({
       <div>
         <p>Price: &euro;{item.price.original.toFixed(2)}</p>
         <p>Total: &euro;{(item.amount! * item.price.original).toFixed(2)}</p>
-        <ButtonGroup disableElevation variant="contained">
-          <Button onClick={() => removeFromWishlist(item.id)} color="primary">
-            -
-          </Button>
-          <Button>{item.amount!}</Button>
-          <Button onClick={() => addToWishlist(item)} color="primary">
-            +
-          </Button>
-        </ButtonGroup>
+      <ButtonGroup disableElevation variant="contained">
+        <Button onClick={() => removeFromWishlist(item.id)} color="primary">
+          -
+        </Button>
+        <Button>{item.amount!}</Button>
+        <Button onClick={() => addToWishlist(item)} color="primary">
+          +
+        </Button>
+      </ButtonGroup>
       </div>
     </Wrapper>
   );
